@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="banniere">
+        <div class="logo-conteneur"><img src="ENEA.png" alt="ENEA.png" class="logo-img"></div>
+        <div class="titre-centre"><h1>Bienvenue sur mon site</h1><h2>FANTODJI Lidwine</h2></div>
+        <div class="logo-conteneur"><img src="Logo-UAC.png" alt="Logo-UAC.png" class="logo-img"></div>
+    </header>
+    <div class="conteneur-principal">
+        <nav class="menu-lateral">
+            <a href="#" class="btn-menu-principal">Menu</a>
+            <a href="tp1.html" class="btn-item">TP1</a>
+            <a href="tp2.html" class="btn-item">TP2</a>
+            <a href="tableau.html" class="btn-item active">Tableau</a>
+            <a href="liste.html" class="btn-item">Listes</a>
+            <a href="formulaire.html" class="btn-item">Formulaire</a>
+        </nav>
+        <main class="contenu-page">
+            <div class="carte-contenu">
+                <h3>Affichage des Tableaux</h3>
+<main class="contenu-page">
+    <div class="carte-contenu-large">
+        <h3>Tableau des Notes du Semestre</h3>
+        <p class="sous-titre">Récapitulatif des évaluations et des coefficients par matière.</p>
+        
+        <!-- Conteneur pour rendre le tableau défilable sur mobile si besoin -->
+        <div class="table-responsive">
+            <table class="tableau-moderne">
+                <thead>
+                    <tr>
+                        <th>Matières</th>
+                        <th>Coefficients</th>
+                        <th>Notes (TP)</th>
+                        <th>Notes (Examen)</th>
+                        <th>Statut</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Algorithmique</strong></td>
+                        <td>4</td>
+                        <td>16 / 20</td>
+                        <td>14 / 20</td>
+                        <td><span class="badge valide">Validé</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Développement Web (HTML/CSS)</strong></td>
+                        <td>3</td>
+                        <td>18 / 20</td>
+                        <td>17 / 20</td>
+                        <td><span class="badge valide">Validé</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bases de Données</strong></td>
+                        <td>3</td>
+                        <td>15 / 20</td>
+                        <td>12 / 20</td>
+                        <td><span class="badge valide">Validé</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Systèmes d'Exploitation</strong></td>
+                        <td>2</td>
+                        <td>11 / 20</td>
+                        <td>09 / 20</td>
+                        <td><span class="badge rattrapage">Rattrapage</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+            
+</body>
+</html>

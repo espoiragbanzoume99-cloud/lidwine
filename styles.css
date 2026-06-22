@@ -1,0 +1,305 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.banniere {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 95px;
+}
+
+.titre-centre {
+    text-align: center;
+}
+
+.titre-centre h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.titre-centre h2 {
+    font-size: 16px;
+    color: #00f2fe;
+    font-weight: 400;
+}
+
+
+.logo-conteneur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.conteneur-principal {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+
+.menu-lateral {
+    width: 240px;
+    background-color: #ffffff;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+    z-index: 10;
+}
+
+.btn-menu-principal {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #00f2fe;
+    color: #1e3c72;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    pointer-events: none; 
+}
+
+.btn-item {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-item:hover {
+    background-color: #f0f4f8;
+    color: #1e3c72;
+    padding-left: 22px;
+}
+
+
+.btn-item.active {
+    background-color: #1e3c72;
+    color: white;
+}
+
+
+.contenu-page {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.carte-contenu {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+}
+
+.carte-contenu h3 {
+    font-size: 22px;
+    color: #1e3c72;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f4f7f6;
+    padding-bottom: 10px;
+}
+
+
+.groupe-form { margin-bottom: 20px; }
+.groupe-form label { display: block; font-weight: 600; margin-bottom: 8px; }
+.options-radio label { display: block; margin-bottom: 8px; cursor: pointer; }
+select, input[type="text"] { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+.btn-validation { background: linear-gradient(135deg, #00f2fe, #4facfe); color: white; border: none; padding: 12px 20px; font-weight: bold; border-radius: 6px; cursor: pointer; }
+ 
+table { border-collapse: collapse;  } td { border: 1px solid black; } 
+
+.menu-lateral {
+    width: 200px;                 
+    background-color: #f0f0f0;    
+    padding: 15px 10px;           
+    display: flex;
+    flex-direction: column;      
+    border-right: 1px solid #ccc; 
+}
+
+
+.btn-menu-principal, .btn-item {
+    display: block;
+    width: 100%;                  
+    padding: 12px 5px;           
+    text-align: center;           
+    text-decoration: none;       
+    color: white;               
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;          
+    box-sizing: border-box;
+}
+
+
+.btn-menu-principal {
+    background-color: #007bff;    
+}
+
+.btn-item {
+    background-color: #0080ff;   
+    transition: opacity 0.2s;     
+}
+
+
+.btn-item:hover {
+    opacity: 0.85;               
+}
+/* --- STYLE DU TABLEAU MODERNE --- */
+
+/* Permet au tableau de ne pas déformer la page si l'écran est petit */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.tableau-moderne {
+    width: 100%;
+    border-collapse: collapse; /* Supprime les doubles bordures */
+    font-size: 15px;
+    text-align: left;
+    background-color: white;
+}
+
+/* Style de la ligne d'en-tête (Haut du tableau) */
+.tableau-moderne th {
+    background-color: #1e3c72; /* Bleu nuit assorti à votre bannière */
+    color: white;
+    padding: 14px 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/* Style des cellules classiques */
+.tableau-moderne td {
+    padding: 12px 18px;
+    border-bottom: 1px solid #eef2f5;
+    color: #444;
+}
+
+/* Alternance de couleur pour une lecture plus facile (lignes paires) */
+.tableau-moderne tbody tr:nth-of-type(even) {
+    background-color: #f8fafc;
+}
+
+/* Effet visuel quand la souris passe sur une ligne */
+.tableau-moderne tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* --- PETITS BADGES DE STATUT DANS LE TABLEAU --- */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.badge.valide {
+    background-color: #ebf9f1;
+    color: #2ecc71; /* Vert */
+}
+
+.badge.rattrapage {
+    background-color: #fdf2e9;
+    color: #e67e22; /* Orange */
+}
+
+/* Ajustement de la largeur maximale pour les tableaux */
+.carte-contenu-large {
+    background-color: rgb(190, 35, 35);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    max-width: 900px; /* Plus large pour accueillir le tableau à l'aise */
+}
+/* --- TABLEAU ENCADRÉ --- */
+.tableau-moderne {
+    width: 100%;
+    border-collapse: collapse; /* Fusionne les bordures pour éviter les doubles traits */
+    font-size: 15px;
+    text-align: left;
+    background-color: rgb(172, 24, 24);
+    
+    /* Encadrement extérieur du tableau */
+    border: 2px solid #1e3c72; /* Ligne épaisse bleu nuit tout autour */
+    border-radius: 8px;        /* Arrondit légèrement les angles extérieurs */
+    overflow: hidden;          /* Force les angles à rester arrondis */
+}
+
+/* Encadrement des cellules de l'en-tête */
+.tableau-moderne th {
+    background-color: #1e3c72;
+    color: rgb(216, 19, 19);
+    padding: 14px 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    
+    /* Bordures intérieures de l'en-tête */
+    border: 1px solid #142c54; 
+}
+
+/* Encadrement des cellules du contenu */
+.tableau-moderne td {
+    padding: 12px 18px;
+    color: #444;
+    
+    /* Bordures intérieures fines entre chaque case */
+    border: 1px solid #0e5dbe; /* Ligne grise nette pour séparer les cases */
+}
+
+/* Conservé : Alternance de couleur pour la lecture */
+.tableau-moderne tbody tr:nth-of-type(even) {
+    background-color: #1266b9;
+}
+
+/* Conservé : Effet au survol */
+.tableau-moderne tbody tr:hover {
+    background-color: #1a6ec2;
+}
